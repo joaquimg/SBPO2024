@@ -1,4 +1,4 @@
-JULIA_VERSION="1.9.3"
+JULIA_VERSION="1.10.5"
 if [ -z `which julia` ]; then
   # Install Julia
   JULIA_VER=`cut -d '.' -f -2 <<< "$JULIA_VERSION"`
@@ -15,7 +15,7 @@ if [ -z `which julia` ]; then
   julia -e 'import IJulia; IJulia.installkernel("julia"; env = Dict("JULIA_NUM_THREADS" => "4"))' &> /dev/null
   KERNEL_DIR=`julia -e 'import IJulia; print(IJulia.kerneldir())'`
   KERNEL_NAME=`ls -d "$KERNEL_DIR"/julia*`
-  mv -f $KERNEL_NAME "$KERNEL_DIR"/Julia-1.9  
+  mv -f $KERNEL_NAME "$KERNEL_DIR"/Julia-1.10.5  
   echo ''
   echo "Successfully installed `julia -v`!"
   echo "Please reload this page (press Ctrl+R, ⌘+R, or the F5 key)"
