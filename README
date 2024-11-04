@@ -11,7 +11,9 @@ Open `notebook_sbpo.ipynb` for more information.
 Open http://colab.research.google.com/ and import the `notebook_sbpo.ipynb` by providing the link to the GitHub repository:
 
 https://github.com/joaquimg/SBPO2024
+
 Install Julia
+
 Click "Connect" in the top-right corner.
 
 You will get a warning that the kernel julia-1.9 is not recognized, defaulting to python3. This is because Julia is not officially supported by Google Colab.
