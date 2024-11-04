@@ -27,3 +27,4 @@ Manifest.toml
 /model.log
 /SDDP.log
 /spaghetti_plot.html
+*.gz
