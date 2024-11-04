@@ -28,3 +28,4 @@ Manifest.toml
 /SDDP.log
 /spaghetti_plot.html
 *.gz
+/MNIST/
